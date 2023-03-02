@@ -1,0 +1,34 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 23,
+      "patch": 0
+    },
+    "configurePresets": [
+      {
+        "name": "qcc8_qnx710_x86_64",
+        "description": "Build with QCC-8 for QNX7.1 x86-64",
+        "generator": "Unix Makefiles",
+        "binaryDir": "build/${presetName}",
+        "cacheVariables": {
+            "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/cmake/${presetName}.cmake"
+          }  
+      },
+      {
+        "name": "qcc5_qnx7_x86_64",
+        "description": "Build with QCC-5 for QNX7 x86-64",
+        "generator": "Unix Makefiles",
+        "binaryDir": "build/${presetName}",
+        "cacheVariables": {
+          "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/cmake/${presetName}.cmake"
+        }
+      },
+      {
+        "name": "default",
+        "generator": "Unix Makefiles",
+        "description": "Use default compiler on system",
+        "binaryDir": "build/${presetName}"
+      }
+    ]
+}

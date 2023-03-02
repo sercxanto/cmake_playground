@@ -1,0 +1,5 @@
+#include "@targetName@.h"
+
+int @functionName@() {
+    return 23 + 42;
+}
