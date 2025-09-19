@@ -1,0 +1,7 @@
+@PACKAGE_INIT@
+
+#list(APPEND CMAKE_MODULE_PATH "@PACKAGE_cmakeModulesDir@")
+
+cmake_minimum_required(VERSION 3.25)
+
+include("${CMAKE_CURRENT_LIST_DIR}/@PACKAGE_IMPORT_TARGET_FILE@")
